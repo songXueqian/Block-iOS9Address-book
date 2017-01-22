@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		0019D5201D7D588400C97F6C /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0019D51F1D7D588400C97F6C /* QuartzCore.framework */; };
+		00A85DDF1E345F270007283D /* PushState.m in Sources */ = {isa = PBXBuildFile; fileRef = 00A85DDE1E345F270007283D /* PushState.m */; };
+		00D0E3821E31EEC20075CCB7 /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 00D0E3811E31EEC20075CCB7 /* SecondViewController.m */; };
 		CF224FA81C4771BF00F645E8 /* blockModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = CF224FA61C4771BF00F645E8 /* blockModel.xcdatamodeld */; };
 		CF224FAD1C47726500F645E8 /* NoteManagedObject+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = CF224FAA1C47726500F645E8 /* NoteManagedObject+CoreDataProperties.m */; };
 		CF224FAE1C47726500F645E8 /* NoteManagedObject.m in Sources */ = {isa = PBXBuildFile; fileRef = CF224FAC1C47726500F645E8 /* NoteManagedObject.m */; };
@@ -43,6 +45,10 @@
 
 /* Begin PBXFileReference section */
 		0019D51F1D7D588400C97F6C /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		00A85DDD1E345F270007283D /* PushState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PushState.h; sourceTree = "<group>"; };
+		00A85DDE1E345F270007283D /* PushState.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PushState.m; sourceTree = "<group>"; };
+		00D0E3801E31EEC20075CCB7 /* SecondViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
+		00D0E3811E31EEC20075CCB7 /* SecondViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
 		CF224FA71C4771BF00F645E8 /* blockModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = blockModel.xcdatamodel; sourceTree = "<group>"; };
 		CF224FA91C47726500F645E8 /* NoteManagedObject+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NoteManagedObject+CoreDataProperties.h"; sourceTree = "<group>"; };
 		CF224FAA1C47726500F645E8 /* NoteManagedObject+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NoteManagedObject+CoreDataProperties.m"; sourceTree = "<group>"; };
@@ -130,11 +136,15 @@
 				CFF40CF01C45F022007F4C52 /* ViewController.m */,
 				CFF40D1F1C45F0C8007F4C52 /* FirstViewController.h */,
 				CFF40D201C45F0C8007F4C52 /* FirstViewController.m */,
+				00D0E3801E31EEC20075CCB7 /* SecondViewController.h */,
+				00D0E3811E31EEC20075CCB7 /* SecondViewController.m */,
 				CF224FA61C4771BF00F645E8 /* blockModel.xcdatamodeld */,
 				CF224FA91C47726500F645E8 /* NoteManagedObject+CoreDataProperties.h */,
 				CF224FAA1C47726500F645E8 /* NoteManagedObject+CoreDataProperties.m */,
 				CF224FAB1C47726500F645E8 /* NoteManagedObject.h */,
 				CF224FAC1C47726500F645E8 /* NoteManagedObject.m */,
+				00A85DDD1E345F270007283D /* PushState.h */,
+				00A85DDE1E345F270007283D /* PushState.m */,
 				CFF40CF21C45F022007F4C52 /* Main.storyboard */,
 				CFF40CF51C45F023007F4C52 /* Assets.xcassets */,
 				CFF40CF71C45F023007F4C52 /* LaunchScreen.storyboard */,
@@ -304,8 +314,10 @@
 				CFF40CF11C45F022007F4C52 /* ViewController.m in Sources */,
 				CFF40CEE1C45F022007F4C52 /* AppDelegate.m in Sources */,
 				CF224FA81C4771BF00F645E8 /* blockModel.xcdatamodeld in Sources */,
+				00D0E3821E31EEC20075CCB7 /* SecondViewController.m in Sources */,
 				CFF40CEB1C45F022007F4C52 /* main.m in Sources */,
 				CF224FAE1C47726500F645E8 /* NoteManagedObject.m in Sources */,
+				00A85DDF1E345F270007283D /* PushState.m in Sources */,
 				CFF40D211C45F0C8007F4C52 /* FirstViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

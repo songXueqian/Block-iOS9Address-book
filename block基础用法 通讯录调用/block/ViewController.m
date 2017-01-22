@@ -16,7 +16,8 @@
 
 //3.调用window 盖住navcontroller 的大灰背景
 //4.OC基础方法
-
+//5.补充block在SecondViewController里，在ViewController里调用
+//6.单例PushState
 
 #import "ViewController.h"
 #import "FirstViewController.h"
@@ -24,8 +25,12 @@
 #import <ContactsUI/ContactsUI.h>
 #import <ContactsUI/CNContactPickerViewController.h>
 #import <ContactsUI/CNContactViewController.h>
+#import "SecondViewController.h"
+#import "PushState.h"
+
 
 @interface ViewController ()<CNContactPickerDelegate, CNContactViewControllerDelegate>
+@property (nonatomic, strong)SecondViewController *secVC;
 
 @end
 
@@ -42,6 +47,30 @@
     self.label.textColor = [UIColor blackColor];
     self.label.backgroundColor = [UIColor whiteColor];
     [self.view addSubview:self.label];
+    
+    
+    NSString *str1 = @"";
+    NSString *str2 = @"";
+    self.secVC = [[SecondViewController alloc] init];
+
+    [self.secVC xing:str1 midXing:str2 name:^(NSString *str, NSInteger num) {
+       
+
+        NSLog(@"str ========= %@", str);
+        NSLog(@"num ========= %ld", num);
+
+        self.label.text = [NSString stringWithFormat:@"%@///%ld", str, num];
+
+    }];
+    
+    
+    
+    
+    PushState *string = [PushState PushStateManage];
+    string.stateString = @"aaaaaaa";
+    NSLog(@"string.stateString ====== %@", string.stateString);
+
+    
     
     self.label2 = [[UILabel alloc] initWithFrame:CGRectMake(20, 160, 150, 30)];
     self.label2.textColor = [UIColor blackColor];
@@ -103,8 +132,10 @@
 //按钮点击事件方法，block回调
 - (void)next:(UITapGestureRecognizer *)tap{
     
+//    self.secVC = [[SecondViewController alloc] init];
+//    [self.secVC action];
 
-    //block方法顺序 先走外面，后走block中方法
+//block方法顺序 先走外面，后走block中方法
     FirstViewController *firstVC = [[FirstViewController alloc] init];
     
     // block回调方法[self resetLabel]

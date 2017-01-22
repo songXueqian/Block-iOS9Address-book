@@ -17,6 +17,9 @@
 
 @property (nonatomic, strong)UIView *watiView;
 
+//- (void)apiGet:(NSString *)function Dat:(id)dat Result:(void (^)(id result_data, NSInteger result_status, NSString *api))result;
+
+
 
 
 @end
